@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Michael Wong</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<html>
+
+<body style="background-color: black">
+    <!-- <img class="nav_pointer" src="images/up_arrow.png" style="position:fixed; height: 10vh"
+        onClick="document.getElementById('Welcome').scrollIntoView();"></img> -->
+
+    <section id="Welcome" class="start" style="text-align: center; align-items: center; height: 100vh;">
+        <img src="images/basic-logo_white.jpg" style="max-width: 60%; height: auto; pointer-events: none;"></img>
+        <div class="nav-bar">
+            <b class="nav" onClick="document.getElementById('About').scrollIntoView();"><span
+                    class="LouisGeorge">About</span></b>
+            <b class="nav" onClick="document.getElementById('Projects').scrollIntoView();"><span
+                    class="LouisGeorge">Projects</span></b>
+            <b class="nav" onClick="document.getElementById('Resume').scrollIntoView();"><span
+                    class="LouisGeorge">Resume</span></b>
+            <b class="nav" onClick="document.getElementById('Photos').scrollIntoView();"><span
+                    class="LouisGeorge">Photos</span></b>
+            <b class="nav" onClick="document.getElementById('Contact').scrollIntoView();"><span
+                    class="LouisGeorge">Contact</span></b>
+        </div>
+    </section>
+
+    <section id="About" class="container" style="background-color:azure">
+        <div class="About" style="margin: 0;">
+            <img class="pfp" src="images/MWGGB.jpeg" style="height:100vh"></img>
+            <div class="intro_text">
+                <h1 class="RetroSignature greeting" style="font-size:15vh">Hi, I'm Michael Wong</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="Intro" class="container" style="height:100vh; background-color:azure">
+        <img src="images/down-arrow.png" class="scroll_down" style="background-color:lightcoral"
+            onClick="document.getElementById('Projects').scrollIntoView()"></img>
+        <div style="margin: 0 auto; align-items: center; text-align: center; margin: 10vh;">
+            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0">About
+                Me</h1>
+            <p id="intro_text" class="LouisGeorge">I am a sophomore studying computer science and math at University of
+                Wisconsin. I am particularly interested in the applications of artificial intelligence and blockchain
+                technologies, which I believe are the cornerstone of tomorrow's technology. I am continually learning
+                and working on projects, and am open to opportunities in research and software. </p>
+            <p class="LouisGeorge">Born and raised in the San Francisco Bay area, I am an avid Warriors and 49ers fan.
+                In my free time, I love working out at the gym, trying new food, and hanging out with my friends.</p>
+            <script></script>
+            <div style="height: 5vh;"></div>
+            <div
+                style="height: 30vh; width: 30vh; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; margin: 0 auto;">
+                <img src="images/Michael Wong Profile.jpeg" style="height: 100%; width: auto"></img>
+            </div>
+    </section>
+
+    <section id="Projects" class="container" style="min-height: 100vh; background-color:darksalmon">
+        <div>
+            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0;">
+                Projects</h1>
+        </div>
+        <img src="images/down-arrow.png" class="scroll_down" style="background-color:mistyrose;"
+            onClick="document.getElementById('Resume').scrollIntoView()"></img>
+    </section>
+
+    <section id="Resume" class="container" style="min-height: 100vh; background-color:lightgray">
+        <div>
+            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin: 0 auto; padding-top: 5vh;">
+                Resume</h1>
+            <div style="text-align: right; padding-right: 7.5vh;">
+                <a href="files/Michael Wong Resume 2023.pdf" download="Michael Wong Resume" target="_blank"
+                    rel="noopener noreferrer">
+                    <iframe src="files/Michael Wong Resume 2023.pdf#toolbar=0"
+                        style="height:67.5vh; width:52.5vh"></iframe></a>
+            </div>
+
+            <img src="images/down-arrow.png" class="scroll_down" style="background-color:lightslategray;"
+                onClick="document.getElementById('Photos').scrollIntoView()"></img>
+        </div>
+    </section>
+
+    <section id="Photos" class="container"
+        style="min-height:100vh; background-color:darkslategray; align-items: center">
+        <div>
+            <h1 class="RetroSignature"
+                style="font-size: 15vh; text-align: center; padding-top: 5vh; padding-bottom: 2vh; margin:0; color: lightslategray">
+                Photo
+                Gallery</h1>
+        </div>
+        <div class="gallery">
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/chicago_bean(1).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/chicago_bean(2).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/chicago_nightskyline.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/minneapolis_frozenwaterfall.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/stlouis_archskyline.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/hongkong(1).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/hongkong(2).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/halfmoonbay.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/sanmateo_pillarpoint.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/sanmateo.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/huntington_beach.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/elpaso.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/camprandall.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/wicapital(1).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/wicapital(2).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/lakegeneva.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/lakemendota(2).jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/lakemendota_sunset.jpeg">
+            </div>
+
+            <div class="slides">
+                <img loading="lazy" src="images/gallery/lilysclassic.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <div class=container id="Contact" style="height: 20vh">
+        <h1 class="RetroSignature"
+            style="font-size: 10vh; text-align: center; padding-top: 5vh; padding-bottom: 5vh; margin: 0 auto; color: white">
+            Let's get in touch!</h1>
+        <div style="text-align: center; padding-bottom: 5vh;">
+            <a href="tel:4089120551"><img src="images/phone.png"></img></a>
+            <a href="mailto:michaelkwong03@gmail.com"><img src="images/mail.png"></img></a>
+            <a href="https://www.linkedin.com/in/michaelkyw/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/linkedin.png"></img></a>
+        </div>
+    </div>
+</body>
+
+</html>
