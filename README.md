@@ -1,4 +1,4 @@
-<h1>Personal Website</h1><br></br>
-Creating a website to introduce myself and show all relevant information, projects, and resume.
+<h1>Personal Website</h1>
+<h3>Creating a website to introduce myself and show all relevant information, projects, and resume.</h3>
 <br></br>
-(Work in progress, not yet published)
+<p>(Work in progress, not yet published)</p>

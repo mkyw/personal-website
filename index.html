@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
+<script type="text/javascript" src="script.js"></script>
 
 <head>
     <title>Michael Wong</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <html>
@@ -29,19 +29,21 @@
         </div>
     </section>
 
-    <section id="About" class="container" style="background-color:azure">
-        <div class="About" style="margin: 0;">
-            <img class="pfp" src="images/MWGGB.jpeg" style="height:100vh"></img>
-            <div class="intro_text">
+    <section id="About" class="container container-about"
+        style="background-image: url(images/MWGGB.jpeg); background-size: cover; background-position: center; background-repeat: no-repeat">
+        <div class="About" style="margin: 5vh 0;">
+            <div>
                 <h1 class="RetroSignature greeting" style="font-size:15vh">Hi, I'm Michael Wong</h1>
             </div>
+
+            <img src="images/down-arrow.png" class="scroll_down footer-about"
+                style="display: block; margin: 0 auto; background-color: blanchedalmond"
+                onClick="document.getElementById('Intro').scrollIntoView()"></img>
         </div>
     </section>
 
-    <section id="Intro" class="container" style="height:100vh; background-color:azure">
-        <img src="images/down-arrow.png" class="scroll_down" style="background-color:lightcoral"
-            onClick="document.getElementById('Projects').scrollIntoView()"></img>
-        <div style="margin: 0 auto; align-items: center; text-align: center; margin: 10vh;">
+    <section id="Intro" class="container" style="background-color:azure">
+        <div style="margin: 10vh 7.5vw; align-items: center; text-align: center">
             <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0">About
                 Me</h1>
             <p id="intro_text" class="LouisGeorge">I am a sophomore studying computer science and math at University of
@@ -56,6 +58,14 @@
                 style="height: 30vh; width: 30vh; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; margin: 0 auto;">
                 <img src="images/Michael Wong Profile.jpeg" style="height: 100%; width: auto"></img>
             </div>
+
+            <div class="footer">
+                <img src="images/down-arrow.png" class="scroll_down" style="background-color:lightcoral"
+                    onClick="document.getElementById('Projects').scrollIntoView()"></img>
+            </div>
+        </div>
+
+
     </section>
 
     <section id="Projects" class="container" style="min-height: 100vh; background-color:darksalmon">
@@ -63,23 +73,50 @@
             <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0;">
                 Projects</h1>
         </div>
-        <img src="images/down-arrow.png" class="scroll_down" style="background-color:mistyrose;"
-            onClick="document.getElementById('Resume').scrollIntoView()"></img>
+
+        <div class="footer">
+            <img src="images/down-arrow.png" class="scroll_down" style="background-color:mistyrose;"
+                onClick="document.getElementById('Resume').scrollIntoView()"></img>
+        </div>
     </section>
 
     <section id="Resume" class="container" style="min-height: 100vh; background-color:lightgray">
-        <div>
-            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin: 0 auto; padding-top: 5vh;">
+        <div class="Resume">
+            <h1 class="RetroSignature resume-header" style="font-size: 15vh; text-align: center; padding-top: 5vh;">
                 Resume</h1>
-            <div style="text-align: right; padding-right: 7.5vh;">
-                <a href="files/Michael Wong Resume 2023.pdf" download="Michael Wong Resume" target="_blank"
-                    rel="noopener noreferrer">
-                    <iframe src="files/Michael Wong Resume 2023.pdf#toolbar=0"
-                        style="height:67.5vh; width:52.5vh"></iframe></a>
+
+            <div class="resume-aside resume-aside-1">
+                <h1 class="LouisGeorge" style="text-align: center;">Highlights:</h1>
+                <div style="margin: 0 5vw; width: fit-content; align-items: center;">
+                    <li>Experience in blockchain technologies, especially in researching Byzantine-failure
+                        tolerant systems and scalability through sharding...</li>
+                    <li>Experience in real-world applications of machine learning, with finished projects
+                        utilizing supervised learning.</li>
+                </div>
+
+                <h1 class="LouisGeorge" style="text-align: center;">Courses taken:</h1>
+                <div style="margin: 0 5vw; width: fit-content; align-items: center;">
+                    <p style="text-align: center;">&#x2022; Blockchain Technologies &#x2022; Algorithms &#x2022; Matrix
+                        Methods in Machine Learning
+                        &#x2022; Artificial Intelligence &#x2022; Operating Systems &#x2022; Linear Optimization
+                        &#x2022;</p>
+
+                </div>
             </div>
 
-            <img src="images/down-arrow.png" class="scroll_down" style="background-color:lightslategray;"
-                onClick="document.getElementById('Photos').scrollIntoView()"></img>
+            <div class="resume-aside resume-aside-2" style="text-align: center">
+                <a href="files/Michael Wong Resume 2023.pdf" download="Michael Wong Resume" target="_blank"
+                    rel="noopener noreferrer" style="height: 10vh; width: auto;">
+                    <img src="files/Michael Wong Resume 2023.jpg"
+                        style="height:67.5vh; width:52.5vh; border: 2px solid black;"></iframe></a>
+
+            </div>
+
+            <div class="footer">
+                <img src="images/down-arrow.png" class="scroll_down"
+                    style="size: 100%; background-color:lightslategray;"
+                    onClick="document.getElementById('Photos').scrollIntoView()"></img>
+            </div>
         </div>
     </section>
 
@@ -174,11 +211,13 @@
         <h1 class="RetroSignature"
             style="font-size: 10vh; text-align: center; padding-top: 5vh; padding-bottom: 5vh; margin: 0 auto; color: white">
             Let's get in touch!</h1>
-        <div style="text-align: center; padding-bottom: 5vh;">
+        <div style="justify-content: center; text-align: center; padding-bottom: 5vh;">
             <a href="tel:4089120551"><img src="images/phone.png"></img></a>
             <a href="mailto:michaelkwong03@gmail.com"><img src="images/mail.png"></img></a>
             <a href="https://www.linkedin.com/in/michaelkyw/" target="_blank" rel="noopener noreferrer"><img
                     src="images/linkedin.png"></img></a>
+            <a href="https://www.github.com/mkyw/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/github.png" style="border-radius: 50%;"></img></a>
         </div>
     </div>
 </body>

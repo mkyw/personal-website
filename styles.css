@@ -13,14 +13,16 @@ html {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -51,7 +53,7 @@ body {
 .nav {
     color: white;
     font-size: large;
-    font:lighter;
+    font: lighter;
     padding-left: 5vh;
     padding-right: 5vh;
 }
@@ -66,31 +68,31 @@ body {
 }
 
 @media all and (max-width: 1200px) {
-  .nav-bar {
-    justify-content: space-around;
-  }
+    .nav-bar {
+        justify-content: space-around;
+    }
 }
 
 @media all and (max-width: 1000px) {
-  .nav-bar {
-    flex-direction: column;
-    line-height: 1.75;
-  }
+    .nav-bar {
+        flex-direction: column;
+        line-height: 1.75;
+    }
 }
 
 .nav span:hover {
-    color:burlywood;
+    color: burlywood;
     cursor: pointer;
 }
 
-.nav_pointer:hover{
+.nav_pointer:hover {
     cursor: pointer;
 }
 
 .container {
     width: 100vw;
-    /* height: 100vh; */
-    min-height: fit-content;
+    height: fit-content;
+    min-height: 100vh;
     margin: 0;
 
     float: left;
@@ -98,6 +100,12 @@ body {
     scroll-snap-align: start;
     position: relative;
     align-items: center;
+}
+
+.container-about {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .LouisGeorge {
@@ -111,6 +119,20 @@ body {
 .RosellindaAlyamore {
     font-family: "Rosellinda Alyamore";
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5vh auto;
+    /* height: 12.5vh; */
+}
+
+/* .footer-about {
+    position: absolute;
+    top: 85vh;
+} */
 
 .scroll_down {
     position: absolute;
@@ -128,21 +150,11 @@ body {
 
 .scroll_down:hover {
     filter: brightness(100%);
+    cursor: pointer;
 }
 
 .About {
-    display: block;
-    object-fit: contain;
-    margin: 0;
-
-    flex-flow: row wrap;
-}
-
-.intro_text {
-    /* height: 100vh; */
     text-align: center;
-    align-items: center;
-    padding-left: 5vh;
 }
 
 .pfp {
@@ -156,14 +168,56 @@ body {
     object-fit: cover;
 }
 
-.greeting {
-    position: absolute;
-    top: 75vh;
-    left: 40%;
+.Resume {
+    display: flex;
+    flex-flow: row wrap;
+}
 
-    text-align: center;
+.resume-aside {
+    margin: 0 auto;
+}
+
+.Resume>* {
+    flex: 1 100%;
+}
+
+.resume-header {
+    /* background-color: red; */
     margin: 0;
-    color:burlywood;
+}
+
+/* .resume-aside-1 {
+    background-color: rebeccapurple;
+}
+
+.resume-aside-2 {
+    background-color: green;
+    margin: 5vh 0;
+} */
+
+@media all and (min-width: 1000px) {
+    .resume-aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .resume-aside-1 {
+        order: 1;
+    }
+
+    .resume-aside-2 {
+        order: 2;
+    }
+
+    .footer {
+        order: 3;
+    }
+}
+
+.greeting {
+    color: blanchedalmond;
+    text-shadow: -0.5px 0 saddlebrown, 0 0.5px saddlebrown, 0.5px 0 saddlebrown, 0 -0.5px saddlebrown;
 }
 
 .gallery {
@@ -195,8 +249,6 @@ body {
     z-index: 2;
     opacity: 1;
     filter: brightness(102%);
-
-    cursor: pointer;;
 }
 
 .slides img:not(:hover) {
