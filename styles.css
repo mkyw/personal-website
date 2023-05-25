@@ -50,8 +50,12 @@ body {
     src: url(fonts/Rosellinda\ Alyamore.otf);
 }
 
+.photos {
+    pointer-events: none;
+}
+
 .nav {
-    color: white;
+    color: blanchedalmond;
     font-size: large;
     font: lighter;
     padding-left: 5vh;
@@ -92,7 +96,7 @@ body {
 .container {
     width: 100vw;
     height: fit-content;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
 
     float: left;
@@ -103,10 +107,11 @@ body {
 }
 
 .container-about {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    display: block;
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
 }
+
 
 .LouisGeorge {
     font-family: "Louis George";
@@ -158,14 +163,13 @@ body {
 }
 
 .pfp {
-    position: relative;
-    display: block;
-    width: 100vw;
-    max-width: 100vw;
-    height: auto;
-    max-height: auto;
-
+    position: fixed;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    /* filter: brightness(120%); */
+    filter: grayscale();
 }
 
 .Resume {
