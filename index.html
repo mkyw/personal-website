@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-
-<script type="text/javascript" src="script.js"></script>
+<html>
 
 <head>
     <title>Michael Wong</title>
+    <link rel="icon" type="images/jpg" href="images/basic-logo_white.jpg">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
-<html>
-
-<body style="background-color: black">
-    <!-- <img class="nav_pointer" src="images/up_arrow.png" style="position:fixed; height: 10vh"
-        onClick="document.getElementById('Welcome').scrollIntoView();"></img> -->
-
+<body style="background-color: white">
     <!-- <section id="Welcome" class="start" style="text-align: center; align-items: center; height: 100vh;">
         <img src="images/basic-logo_white.jpg" style="max-width: 60%; height: auto; pointer-events: none;"></img>
         <div class="nav-bar">
@@ -30,49 +26,46 @@
     </section> -->
 
     <section id="About" class="container container-about" style="min-height:100vh">
-        <!-- style="background-image: url(images/MWGGB.jpeg); background-size: cover; background-position: center; background-repeat:
-        no-repeat" -->
-        <div style="position: absolute; height: 100vh; width: 100vw;">
-            <img src="images/MWGGB.jpeg" class="pfp">
-        </div>
-        <div style="height: 100vh; width: 100vw; position: absolute;"></div>
-        <!-- <img src="images/basic-logo_white.jpg" class="photos"
-            style="position: absolute; margin: 5vh 5vh; min-width: 30%; max-width: 30%; width: auto; height:auto"></img> -->
-        <div class="About" style="margin: 5vh 0;">
-            <div class="nav-bar" style="position: absolute; left: 0; right: 0; margin: auto">
-                <b class="nav" onClick="document.getElementById('Intro').scrollIntoView();"><span
-                        class="LouisGeorge">About</span></b>
-                <b class="nav" onClick="document.getElementById('Projects').scrollIntoView();"><span
-                        class="LouisGeorge">Projects</span></b>
-                <b class="nav" onClick="document.getElementById('Resume').scrollIntoView();"><span
-                        class="LouisGeorge">Resume</span></b>
-                <b class="nav" onClick="document.getElementById('Photos').scrollIntoView();"><span
-                        class="LouisGeorge">Photos</span></b>
-                <b class="nav" onClick="document.getElementById('Contact').scrollIntoView();"><span
-                        class="LouisGeorge">Contact</span></b>
+        <div class="ab-wrapper">
+            <div class="ab-divs pfp-div">
             </div>
-            <div style="position: absolute; top: 50%; left: 10%;">
-                <h1 class="RetroSignature greeting" style="font-size:15vh">Hi, I'm Michael Wong</h1>
+
+            <div class="ab-divs nav-div">
+                <div class="nav-bar">
+
+                    <img src="images/basic-logo_white.jpg"
+                        style="width: 10vw; background-color: black; filter: invert();">
+                    <li class="nav"><span class="LouisGeorge nav-text"
+                            onClick="document.getElementById('Intro').scrollIntoView();">ABOUT</span></li>
+                    <li class="nav"><span class="LouisGeorge nav-text"
+                            onClick="document.getElementById('Projects').scrollIntoView();">PROJECTS</span></li>
+                    <li class="nav"><span class="LouisGeorge nav-text"
+                            onClick="document.getElementById('Resume').scrollIntoView();">RESUME</span></li>
+                    <li class="nav"><span class="LouisGeorge nav-text"
+                            onClick="document.getElementById('Photos').scrollIntoView();">PHOTOS</span></li>
+                    <li class="nav"><span class=" LouisGeorge nav-text"
+                            onClick="document.getElementById('Contact').scrollIntoView();">CONTACT</span></li>
+                </div>
             </div>
-            <!-- 
-            <img src="images/down-arrow.png" class="scroll_down footer-about"
-                style="opacity: 0.7; filter: brightness(200%); display: block; margin: 0 auto; background-color: blanchedalmond"
-                onClick="document.getElementById('Intro').scrollIntoView()"></img> -->
+
+            <h1 class="RetroSignature greeting" style="font-size:15vh; position: absolute; top: 50%; left: 10%;">Hi, I'm
+                Michael Wong!</h1>
         </div>
     </section>
 
-    <section id="Intro" class="container" style="min-height:100vh; background-color:azure">
-        <div style="margin: 10vh 7.5vw; align-items: center; text-align: center">
-            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0">About
-                Me</h1>
-            <p id="intro_text" class="LouisGeorge">I am a sophomore studying computer science and math at University of
-                Wisconsin. I am particularly interested in the applications of artificial intelligence and blockchain
-                technologies, which I believe are the cornerstone of tomorrow's technology. I am continually learning
+    <section id="Intro" class="container" style="min-height:100vh; background-color:#B5D5C5">
+        <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin: 5vh 0">
+            About Me</h1>
+        <div style="margin: 0 7.5vw; align-items: center; text-align: center">
+            <!-- <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin: 0 auto">About
+                Me</h1> -->
+            <p id="intro_text" class="LouisGeorge">I am a junior studying Computer Science and Math at the University of
+                Wisconsin, Madison. My interests are in the applications of artificial intelligence and
+                blockchain, which I believe are the cornerstone of tomorrow's technology. I am continually learning
                 and working on projects, and am open to opportunities in research and software. </p>
-            <p class="LouisGeorge">Born and raised in the San Francisco Bay area, I am an avid Warriors and 49ers fan.
-                In my free time, I love working out at the gym, trying new food, and hanging out with my friends.</p>
-            <script></script>
-            <div style="height: 5vh;"></div>
+            <p class="LouisGeorge">Born and raised in the San Francisco Bay Area, I am an avid Warriors and 49ers fan.
+                In my free time, I love working out, trying new food, and hanging out with my friends.</p>
+            <div style="height: 10vh;"></div>
             <div
                 style="height: 30vh; width: 30vh; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; margin: 0 auto;">
                 <img src="images/Michael Wong Profile.jpeg" class="photos" style="height: 100%; width: auto"></img>
@@ -87,10 +80,18 @@
 
     </section>
 
-    <section id="Projects" class="container" style="min-height: 100vh; background-color:darksalmon">
+    <section id="Projects" class="container" style="min-height: 100vh; background-color:azure">
         <div>
-            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center; margin-bottom: 0;">
+            <h1 class="RetroSignature" style="font-size: 15vh; text-align: center;  margin: 5vh 0">
                 Projects</h1>
+        </div>
+
+        <div style="text-align: center;">
+            <p class="LouisGeorge">Here are some featured projects that I've worked on recently. Feel free to check my
+                GitHub for a comprehensive collection of all my projects.</p>
+
+            <a href="https://www.github.com/mkyw/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/github.png" style="border-radius: 50%;"></img></a>
         </div>
 
         <div class="footer">
@@ -99,9 +100,9 @@
         </div>
     </section>
 
-    <section id="Resume" class="container" style="min-height: 100vh; background-color:lightgray">
+    <section id="Resume" class="container" style="min-height: 100vh; background-color: #eae7dc;">
         <div class="Resume">
-            <h1 class="RetroSignature resume-header" style="font-size: 15vh; text-align: center; padding-top: 5vh;">
+            <h1 class="RetroSignature resume-header" style="font-size: 15vh; text-align: center; margin: 5vh 0">
                 Resume</h1>
 
             <div class="resume-aside resume-aside-1">
@@ -143,7 +144,7 @@
         style="min-height:100vh; background-color:darkslategray; align-items: center">
         <div>
             <h1 class="RetroSignature"
-                style="font-size: 15vh; text-align: center; padding-top: 5vh; padding-bottom: 2vh; margin:0; color: lightslategray">
+                style="font-size: 15vh; text-align: center;  margin: 5vh 0; color: lightslategray">
                 Photo
                 Gallery</h1>
         </div>
